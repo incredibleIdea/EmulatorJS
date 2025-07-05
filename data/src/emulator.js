@@ -1006,6 +1006,7 @@ class EmulatorJS {
             this.textElem.remove();
             this.textElem = null;
             this.game.classList.remove("ejs_game");
+            this.game.classList.add("ejs_canvas_parent");
             this.game.appendChild(this.canvas);
             this.handleResize();
             this.started = true;
